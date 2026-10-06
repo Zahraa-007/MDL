@@ -1,27 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/components.css">
-    <link rel="stylesheet" href="../../css/responsive.css">
-    <link rel="stylesheet" href="../../css/authertication.css">
-    <link rel="stylesheet" href="../../css/style.css">
-    <title>Sign Up</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>إنشاء حساب | MDL — مكتبة بيانات وادي الرافدين</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../src/styles/base.css">
+  <link rel="stylesheet" href="../../src/styles/components.css">
+  <link rel="stylesheet" href="../../src/styles/pages/auth.css">
+  <link rel="stylesheet" href="../../src/styles/responsive.css">
 </head>
 <body>
-    <main class="login-container">
-        <h1>Create Account</h1>
-        <form>
-            <input type="text" placeholder="Full Name" required>
-            <input type="email" placeholder="Email" required>
-            <input type="password" placeholder="Password" required>
-            <input type="password" placeholder="Confirm Password" required>
-            <button class="mdl-button" type="submit">Sign Up</button>
-        </form>
-        <p>Already have an account?
-            <a href="login.html"> Login here.</a>
-        </p>
-    </main>
+  <main class="auth-shell">
+    <div class="auth-panel">
+      <h1>إنشاء حساب</h1>
+      <p class="auth-panel__meta">انضم إلى MDL — مكتبة بيانات وادي الرافدين</p>
+      <form class="auth-form">
+        <div class="field-group">
+          <label for="signup-name">الاسم الكامل</label>
+          <input id="signup-name" type="text" placeholder="اسمك" required>
+        </div>
+        <div class="field-group">
+          <label for="signup-email">البريد الإلكتروني</label>
+          <input id="signup-email" type="email" placeholder="name@email.com" required>
+        </div>
+        <div class="field-group">
+          <label for="signup-password">كلمة المرور</label>
+          <input id="signup-password" type="password" placeholder="أنشئ كلمة مرور" required>
+        </div>
+        <div class="field-group">
+          <label for="signup-confirm">تأكيد كلمة المرور</label>
+          <input id="signup-confirm" type="password" placeholder="تأكيد كلمة المرور" required>
+        </div>
+        <button class="btn btn--primary" type="submit">إنشاء الحساب</button>
+      </form>
+      <div class="auth-links">
+        <span>هل لديك حساب بالفعل؟</span>
+        <a href="login.html">تسجيل الدخول</a>
+      </div>
+    </div>
+  </main>
+  <script src="../../src/scripts/main.js"></script>
 </body>
 </html>

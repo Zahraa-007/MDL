@@ -1,0 +1,138 @@
+@media (max-width: 960px) {
+  .header-inner {
+    flex-wrap: wrap;
+    padding: 1rem 0;
+  }
+
+  .site-nav {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 0;
+  }
+
+  .hero__inner,
+  .page-layout,
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-grid,
+  .card-grid,
+  .dataset-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .header-inner,
+  .page-footer__inner {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .site-header {
+    position: sticky;
+  }
+
+  .site-nav {
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding-bottom: 0.25rem;
+  }
+
+  .site-nav a {
+    white-space: nowrap;
+  }
+
+  .site-search {
+    width: 100%;
+  }
+
+  .hero {
+    padding-top: 3rem;
+  }
+
+  .hero__actions,
+  .auth-links {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .stat-grid,
+  .card-grid,
+  .form-grid,
+  .home-feature-list,
+  .data-grid,
+  .info-stack,
+  .dataset-list,
+  .contact-points,
+  .profile-form .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-layout,
+  .profile-layout {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .contact-copy,
+  .contact-form,
+  .profile-summary,
+  .detail-panel,
+  .side-panel {
+    min-width: 0;
+    padding: 1.1rem;
+  }
+
+  .contact-form__header {
+    align-items: flex-start;
+  }
+
+  .profile-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  .page-shell {
+    width: min(100% - 24px, 1200px);
+  }
+
+  .brand {
+    font-size: clamp(1.2rem, 5vw, 1.5rem);
+  }
+
+  .hero__panel,
+  .detail-panel,
+  .side-panel,
+  .auth-panel {
+    padding: 1rem;
+  }
+
+  .field-card,
+  .resource-card,
+  .info-card {
+    padding: 1rem;
+  }
+
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .contact-copy h2 {
+    font-size: clamp(1.6rem, 8vw, 2.2rem);
+  }
+
+  .contact-points {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

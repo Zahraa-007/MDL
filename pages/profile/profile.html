@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الملف الشخصي | MDL — مكتبة بيانات وادي الرافدين</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../src/styles/base.css">
+  <link rel="stylesheet" href="../src/styles/components.css">
+  <link rel="stylesheet" href="../src/styles/responsive.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="page-shell header-inner">
+      <a href="../index.html" class="brand" aria-label="العودة للصفحة الرئيسية"><span class="brand-mark">M</span>MDL</a>
+      <nav class="site-nav" aria-label="التنقل الرئيسي">
+        <a href="../index.html">الرئيسية</a>
+        <a href="about.html">من نحن</a>
+        <a href="resources.html">الموارد</a>
+        <a href="contact.html">تواصل معنا</a>
+        <a href="profile.html" class="is-active">الملف الشخصي</a>
+      </nav>
+      <label class="site-search" aria-label="البحث">
+        <span aria-hidden="true">⌕</span>
+        <input type="search" placeholder="ابحث ...">
+      </label>
+      <a href="auth/login.html" class="btn btn--primary">تسجيل الدخول</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="page-shell page-header__content">
+        <h1>ملف الباحث</h1>
+        <p>تابع نشاطك والموارد المحفوظة والمشاركة في المنصة.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="page-shell profile-layout">
+        <aside class="side-panel profile-summary">
+          <h2>ملخص الملف</h2>
+          <div class="profile-summary__item">
+            <label>الاسم الكامل</label>
+            <strong id="profileNameValue">Layla Al-Hadid</strong>
+          </div>
+          <div class="profile-summary__item">
+            <label>الدور</label>
+            <strong id="profileRoleValue">محلل بيانات</strong>
+          </div>
+          <div class="profile-summary__item">
+            <label>البريد الإلكتروني</label>
+            <strong id="profileEmailValue">layla@datahaze.ai</strong>
+          </div>
+          <div class="profile-summary__item">
+            <label>المنظمة</label>
+            <strong id="profileOrgValue">MDL — مكتبة بيانات وادي الرافدين</strong>
+          </div>
+          <div class="profile-summary__item">
+            <label>نبذة</label>
+            <strong id="profileBioValue">أعمل على تحليل البيانات السريرية وتحويلها إلى رؤى عملية.</strong>
+          </div>
+        </aside>
+
+        <article class="detail-panel" id="profileEditorPanel" hidden>
+          <h2>تحديث الملف الشخصي</h2>
+          <form id="profileForm" class="profile-form">
+            <div class="form-grid">
+              <div class="profile-field">
+                <label for="profile-name">الاسم الكامل</label>
+                <input id="profile-name" name="name" type="text" value="Layla Al-Hadid">
+              </div>
+              <div class="profile-field">
+                <label for="profile-role">الدور</label>
+                <input id="profile-role" name="role" type="text" value="محلل بيانات">
+              </div>
+            </div>
+
+            <div class="form-grid">
+              <div class="profile-field">
+                <label for="profile-email">البريد الإلكتروني</label>
+                <input id="profile-email" name="email" type="email" value="layla@datahaze.ai">
+              </div>
+              <div class="profile-field">
+                <label for="profile-organization">المنظمة</label>
+                <input id="profile-organization" name="organization" type="text" value="MDL — مكتبة بيانات وادي الرافدين">
+              </div>
+            </div>
+
+            <div class="profile-field">
+              <label for="profile-bio">نبذة</label>
+              <textarea id="profile-bio" name="bio">أعمل على تحليل البيانات السريرية وتحويلها إلى رؤى عملية.</textarea>
+            </div>
+
+            <div class="profile-actions">
+              <button id="saveProfileBtn" class="btn btn--primary" type="submit">حفظ التغييرات</button>
+            </div>
+
+            <div id="profileStatus" class="profile-status" hidden></div>
+          </form>
+        </article>
+
+        <div class="profile-edit-trigger">
+          <button id="toggleProfileEdit" class="btn btn--secondary" type="button">تعديل الملف</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="page-shell">
+        <div class="section-heading">
+          <span class="eyebrow">النشاط</span>
+          <h2>آخر التحديثات</h2>
+        </div>
+
+        <div class="detail-list">
+          <div class="detail-item"><strong>مراجعة بيانات سريرية</strong><span>اليوم</span></div>
+          <div class="detail-item"><strong>تحديث لوحة الطاقة</strong><span>أمس</span></div>
+          <div class="detail-item"><strong>تم حفظ ملخص أعمال</strong><span>قبل 3 أيام</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-shell page-footer__inner">
+      <div><strong>MDL</strong> · مكتبة بيانات وادي الرافدين</div>
+      <div>© 2026 MDL</div>
+    </div>
+  </footer>
+  <script src="../../src/scripts/main.js"></script>
+</body>
+</html>

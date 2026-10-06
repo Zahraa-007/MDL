@@ -1,0 +1,18 @@
+body {
+  display: block;
+}
+
+.auth-shell {
+  padding: 4rem 0;
+}
+
+.auth-panel__meta {
+  margin: 0 0 1.5rem;
+  text-align: center;
+  color: var(--color-text-secondary);
+}
+
+.auth-panel__meta a {
+  color: var(--color-accent);
+}
+
