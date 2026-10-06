@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>معلومات البيانات | MDL — مكتبة بيانات وادي الرافدين</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../src/styles/base.css">
+  <link rel="stylesheet" href="../src/styles/components.css">
+  <link rel="stylesheet" href="../src/styles/responsive.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="page-shell header-inner">
+      <a href="../index.html" class="brand" aria-label="العودة للصفحة الرئيسية"><span class="brand-mark">M</span>MDL</a>
+      <nav class="site-nav" aria-label="التنقل الرئيسي">
+        <a href="../index.html">الرئيسية</a>
+        <a href="about.html">من نحن</a>
+        <a href="resources.html">الموارد</a>
+        <a href="contact.html">تواصل معنا</a>
+        <a href="profile.html">الملف الشخصي</a>
+      </nav>
+      <label class="site-search" aria-label="البحث">
+        <span aria-hidden="true">⌕</span>
+        <input type="search" placeholder="ابحث ...">
+      </label>
+      <a href="auth/login.html" class="btn btn--primary">تسجيل الدخول</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="page-shell page-header__content">
+        <h1>تفاصيل مجموعة البيانات</h1>
+        <p>لوحة كاملة تعرض حجم مجموعة البيانات، عدد المستخدمين النشطين، عدد التحميلات، تفاصيل النشر، ومؤشرات الاستخدام لتقييم قيمة البيانات بشكل واضح وقابل للتنفيذ.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="page-shell page-layout" data-detail="dataset"></div>
+    </section>
+
+    <section class="section">
+      <div class="page-shell">
+        <div class="section-heading">
+          <span class="eyebrow">جدول البيانات</span>
+          <h2>هيكل الحقول الأساسية</h2>
+        </div>
+
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>الحقل</th>
+                <th>النوع</th>
+                <th>الوصف</th>
+                <th>الحالة</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>dataset_id</td>
+                <td>string</td>
+                <td>معرّف فريد لكل مجموعة</td>
+                <td>مفعّل</td>
+              </tr>
+              <tr>
+                <td>source_name</td>
+                <td>string</td>
+                <td>اسم المصدر أو المؤسسة</td>
+                <td>مفعّل</td>
+              </tr>
+              <tr>
+                <td>updated_at</td>
+                <td>datetime</td>
+                <td>تاريخ آخر تحديث</td>
+                <td>مفعّل</td>
+              </tr>
+              <tr>
+                <td>quality_score</td>
+                <td>float</td>
+                <td>درجة جودة السجل</td>
+                <td>مفعّل</td>
+              </tr>
+              <tr>
+                <td>region</td>
+                <td>string</td>
+                <td>المنطقة الجغرافية</td>
+                <td>مفعّل</td>
+              </tr>
+              <tr>
+                <td>download_count</td>
+                <td>integer</td>
+                <td>عدد مرات التنزيل</td>
+                <td>مفعّل</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="page-shell">
+        <div class="section-heading">
+          <span class="eyebrow">الاستخدام</span>
+          <h2>كيف تُستخدم هذه البيانات</h2>
+        </div>
+
+        <div class="info-stack">
+          <article class="info-card">
+            <h3>للتقارير</h3>
+            <p>تستخدم في إعداد تقارير الأداء، التحليل الدوري، والملخصات التنفيذية على مستوى الفرق.</p>
+          </article>
+          <article class="info-card">
+            <h3>للدعم الاستراتيجي</h3>
+            <p>تساعد الإدارة في اتخاذ قرارات قائمة على أدلة مستندة إلى بيانات دقيقة ومحدثة.</p>
+          </article>
+          <article class="info-card">
+            <h3>للبحث العلمي</h3>
+            <p>تغطي الحالات والاتجاهات الأساسية للأبحاث الميدانية مع إمكانية المقارنة عبر الوقت.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-shell page-footer__inner">
+      <div><strong>MDL</strong> · مكتبة بيانات وادي الرافدين</div>
+      <div>© 2026 MDL</div>
+    </div>
+  </footer>
+
+  <script src="../src/scripts/main.js"></script>
+</body>
+</html>

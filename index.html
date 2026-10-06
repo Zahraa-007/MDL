@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MDL — مكتبة بيانات وادي الرافدين</title>
+  <meta name="description" content="MDL — مكتبة بيانات وادي الرافدين للبحث والمعرفة والبيانات.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/styles/base.css">
+  <link rel="stylesheet" href="src/styles/components.css">
+  <link rel="stylesheet" href="src/styles/pages/home.css">
+  <link rel="stylesheet" href="src/styles/responsive.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="page-shell header-inner">
+      <a href="index.html" class="brand" aria-label="العودة للصفحة الرئيسية"><span class="brand-mark">M</span>MDL</a>
+      <nav class="site-nav" aria-label="التنقل الرئيسي">
+        <a href="index.html" class="is-active">الرئيسية</a>
+        <a href="pages/about.html">من نحن</a>
+        <a href="pages/resources.html">الموارد</a>
+        <a href="pages/contact.html">تواصل معنا</a>
+        <a href="pages/profile.html">الملف الشخصي</a>
+      </nav>
+      <label class="site-search" aria-label="البحث">
+        <span aria-hidden="true">⌕</span>
+        <input type="search" placeholder="ابحث ...">
+      </label>
+      <a href="pages/auth/login.html" class="btn btn--primary">تسجيل الدخول</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero home-hero">
+      <div class="page-shell hero__inner">
+        <div class="hero__content">
+          <span class="eyebrow">مكتبة بيانات وادي الرافدين</span>
+          <h1>MDL <span>مكتبة بيانات وادي الرافدين</span></h1>
+          <p>اكتشف منصة معرفية متكاملة للباحثين والطلاب والمهنيين، تجمع بين البيانات، الأبحاث، والأدوات في بيئة واضحة وسهلة الاستخدام.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="pages/resources.html">استكشف الموارد</a>
+            <a class="btn btn--secondary" href="pages/data.html">معلومات البيانات</a>
+            <a class="btn btn--secondary" href="pages/about.html">اعرف المزيد</a>
+          </div>
+
+          <div class="stat-grid" aria-label="إحصائيات المنصة">
+            <article class="stat-card">
+              <div class="stat-card__icon">📚</div>
+              <h3>10K+</h3>
+              <p>مورد</p>
+            </article>
+            <article class="stat-card">
+              <div class="stat-card__icon">👥</div>
+              <h3>500+</h3>
+              <p>مساهم</p>
+            </article>
+            <article class="stat-card">
+              <div class="stat-card__icon">📈</div>
+              <h3>50K+</h3>
+              <p>مشاهدة شهرية</p>
+            </article>
+            <article class="stat-card">
+              <div class="stat-card__icon">⚡</div>
+              <h3>24/7</h3>
+              <p>تحديثات</p>
+            </article>
+          </div>
+        </div>
+
+        <aside class="hero__panel" aria-label="أبرز ما يميز المنصة">
+          <div class="panel-card">
+            <span class="chip">مميز</span>
+            <h3>ملخصات بحثية</h3>
+            <p>تجميع مختصر لأهم الأخبار والبيانات في مجالات الصحة والطاقة والأعمال.</p>
+          </div>
+          <div class="panel-card">
+            <span class="chip">جديد</span>
+            <h3>رؤى المجالات</h3>
+            <p>لوحات ومجموعات بيانات وملاحظات جاهزة للمراجعة والاستفادة.</p>
+          </div>
+          <div class="panel-card">
+            <span class="chip">مجتمع</span>
+            <h3>حلقة المعرفة</h3>
+            <p>تعاون ومحتوى وأدوات تساعد على تطوير الخبرة والوعي.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="page-shell">
+        <div class="section-heading">
+          <span class="eyebrow">المجالات</span>
+          <h2>استكشف حسب المجال</h2>
+          <p>كل مجال يوفر البيانات والأدوات والسياق المناسب لقرارات أفضل.</p>
+        </div>
+        <div class="card-grid" data-render="fields"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="page-shell">
+        <div class="section-heading">
+          <span class="eyebrow">نظرة عامة</span>
+          <h2>مبني على أدلة واضحة</h2>
+        </div>
+        <div class="home-feature-list">
+          <article class="info-card">
+            <span>◎</span>
+            <h3>بيانات موثوقة</h3>
+            <p>مصادر منظمة ومراجع موثقة وخيارات تحليل دقيقة.</p>
+          </article>
+          <article class="info-card">
+            <span>◇</span>
+            <h3>جاهز للبحث</h3>
+            <p>من لوحات البيانات إلى التقارير، كل شيء مرتب ومتاح للاستخدام.</p>
+          </article>
+          <article class="info-card">
+            <span>✓</span>
+            <h3>رؤى عملية</h3>
+            <p>موجزات واضحة تساعد على اتخاذ القرارات وتسهيل التعلم.</p>
+          </article>
+          <article class="info-card">
+            <span>⌁</span>
+            <h3>معرفة مترابطة</h3>
+            <p>منصات وآدوات تتيح الوصول السريع إلى المعرفة عبر التخصصات.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="page-shell">
+        <div class="section-heading">
+          <span class="eyebrow">حزم البيانات</span>
+          <h2>أبرز الحزم</h2>
+          <p>بطاقات بيانات مختارة تعرض أهم الحزم المتاحة مع إمكانية المعاينة في صفحة منفصلة.</p>
+        </div>
+        <div class="dataset-list" data-render="datasets"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="page-shell">
+        <div class="section-heading">
+          <span class="eyebrow">الموارد</span>
+          <h2>آخر المواد</h2>
+          <p>موارد قابلة للبحث والفحص والتنزيل بسهولة في واجهة واضحة.</p>
+        </div>
+        <div class="card-grid" data-render="resources"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-shell page-footer__inner">
+      <div><strong>MDL</strong> · مكتبة بيانات وادي الرافدين</div>
+      <div>© 2026 MDL</div>
+    </div>
+  </footer>
+
+  <script src="src/scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+.home-hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.home-hero::after {
+  content: "";
+  position: absolute;
+  inset: auto -8rem -8rem auto;
+  width: 20rem;
+  height: 20rem;
+  background: rgba(25, 181, 165, 0.12);
+  border-radius: 50%;
+  filter: blur(24px);
+}
+
+.home-feature-list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.2rem;
+}
+
+.home-feature-list .info-card {
+  padding: 1.3rem;
+}
+
+.home-feature-list h3 {
+  margin: 0.9rem 0 0.6rem;
+}
+
+.home-feature-list .info-card span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 0.8rem;
+  background: rgba(25, 181, 165, 0.14);
+  color: var(--color-primary);
+  font-size: 1.15rem;
+}
+

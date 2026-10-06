@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تواصل معنا | MDL — مكتبة بيانات وادي الرافدين</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../src/styles/base.css">
+  <link rel="stylesheet" href="../src/styles/components.css">
+  <link rel="stylesheet" href="../src/styles/pages/contact.css">
+  <link rel="stylesheet" href="../src/styles/responsive.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="page-shell header-inner">
+      <a href="../index.html" class="brand" aria-label="العودة للصفحة الرئيسية"><span class="brand-mark">M</span>MDL</a>
+      <nav class="site-nav" aria-label="التنقل الرئيسي">
+        <a href="../index.html">الرئيسية</a>
+        <a href="about.html">من نحن</a>
+        <a href="resources.html">الموارد</a>
+        <a href="contact.html" class="is-active">تواصل معنا</a>
+        <a href="profile.html">الملف الشخصي</a>
+      </nav>
+      <label class="site-search" aria-label="البحث">
+        <span aria-hidden="true">⌕</span>
+        <input type="search" placeholder="ابحث ...">
+      </label>
+      <a href="auth/login.html" class="btn btn--primary">تسجيل الدخول</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="page-shell page-header__content">
+        <h1>لنصنع معرفة أفضل معاً.</h1>
+        <p>تواصل معنا لأغراض الشراكة، التعاون البحثي، ملاحظات المنصة، أو أي استفسار عام.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="page-shell contact-layout">
+        <aside class="contact-copy">
+          <span class="eyebrow">مكتبة بيانات وادي الرافدين</span>
+          <h2>نُنشئ مع الباحثين والفرق والمؤسسات.</h2>
+          <p>من أفكار البحث إلى دعم البيانات التشغيلية، نحن هنا لمساعدة بناء بيئة معرفية أكثر تواصلًا وفعالية.</p>
+
+          <div class="contact-points">
+            <article class="info-card">
+              <span class="chip">01</span>
+              <strong>البحث</strong>
+            </article>
+            <article class="info-card">
+              <span class="chip">02</span>
+              <strong>البيانات</strong>
+            </article>
+            <article class="info-card">
+              <span class="chip">03</span>
+              <strong>المعرفة</strong>
+            </article>
+            <article class="info-card">
+              <span class="chip">04</span>
+              <strong>المجتمع</strong>
+            </article>
+          </div>
+        </aside>
+
+        <div class="contact-form">
+          <div class="contact-form__header">
+            <span>01</span>
+            <div>
+              <h3>أرسل لنا رسالة</h3>
+              <p>سنرد عليك في أقرب فرصة ممكنة.</p>
+            </div>
+          </div>
+
+          <form id="contactForm">
+            <div class="form-grid">
+              <div class="field-group">
+                <label for="name">الاسم الكامل</label>
+                <input id="name" name="name" type="text" placeholder="اسمك الكامل" required>
+              </div>
+              <div class="field-group">
+                <label for="email">البريد الإلكتروني</label>
+                <input id="email" name="email" type="email" placeholder="name@email.com" required>
+              </div>
+            </div>
+
+            <div class="field-group">
+              <label for="type">نوع التواصل</label>
+              <select id="type" name="type" required>
+                <option value="">اختر خياراً</option>
+                <option>استفسار بحثي</option>
+                <option>ملاحظة أو اقتراح</option>
+                <option>شراكة أكاديمية</option>
+                <option>مساهمة محتوى</option>
+                <option>أخرى</option>
+              </select>
+            </div>
+
+            <div class="field-group">
+              <label for="subject">الموضوع</label>
+              <input id="subject" name="subject" type="text" placeholder="موضوع الرسالة" required>
+            </div>
+
+            <div class="field-group">
+              <label for="message">الرسالة</label>
+              <textarea id="message" name="message" placeholder="أخبرنا كيف يمكننا مساعدتك..." required></textarea>
+            </div>
+
+            <button class="btn btn--primary" type="submit">إرسال الرسالة</button>
+
+            <div class="form-success" hidden>
+              <span class="form-success__icon">✓</span>
+              <div>
+                <strong>تم استلام الرسالة.</strong>
+                <div>سنتواصل معك قريباً.</div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-shell page-footer__inner">
+      <div><strong>MDL</strong> · مكتبة بيانات وادي الرافدين</div>
+      <div>© 2026 MDL</div>
+    </div>
+  </footer>
+
+  <script src="../src/scripts/main.js"></script>
+</body>
+</html>
