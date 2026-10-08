@@ -453,6 +453,7 @@ const initProfileEditor = () => {
   if (!profileForm) return;
 
   const editorPanel = document.querySelector("#profileEditorPanel");
+  const profileLayout = profileForm.closest(".profile-layout");
   const toggleButton = document.querySelector("#toggleProfileEdit");
   const fields = [...profileForm.querySelectorAll("input, textarea")];
   const status = document.querySelector("#profileStatus");
@@ -476,6 +477,7 @@ const initProfileEditor = () => {
     if (editorPanel) {
       editorPanel.hidden = false;
     }
+    profileLayout?.classList.add("is-editing");
     if (toggleButton) {
       toggleButton.textContent = "إلغاء التعديل";
     }
@@ -489,6 +491,7 @@ const initProfileEditor = () => {
     if (editorPanel) {
       editorPanel.hidden = true;
     }
+    profileLayout?.classList.remove("is-editing");
     if (toggleButton) {
       toggleButton.textContent = "تعديل الملف";
     }

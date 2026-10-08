@@ -18,23 +18,11 @@
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 0.45rem;
+  direction: ltr;
   font-size: clamp(1.15rem, 1.4vw, 1.45rem);
   font-weight: 800;
   letter-spacing: -0.05em;
   color: var(--color-primary);
-}
-
-.brand-mark {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 1.7rem;
-  height: 1.7rem;
-  border-radius: 0.55rem;
-  background: rgba(25, 181, 165, 0.12);
-  border: 1px solid rgba(25, 181, 165, 0.28);
-  font-size: 0.82rem;
 }
 
 .site-nav {
@@ -605,9 +593,19 @@
 
 .profile-layout {
   display: grid;
-  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.2fr);
+  grid-template-columns: 1fr;
   gap: 1.5rem;
   align-items: start;
+}
+
+.profile-layout.is-editing {
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.2fr);
+}
+
+.profile-sidebar {
+  display: grid;
+  gap: 1rem;
+  min-width: 0;
 }
 
 .profile-summary {
@@ -685,7 +683,8 @@
 }
 
 .profile-edit-trigger {
-  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .profile-status {
