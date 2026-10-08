@@ -14,7 +14,9 @@
 
   .hero__inner,
   .page-layout,
-  .contact-layout {
+  .contact-layout,
+  .profile-layout,
+  .profile-layout.is-editing {
     grid-template-columns: 1fr;
   }
 

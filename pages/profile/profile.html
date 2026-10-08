@@ -7,26 +7,26 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../src/styles/base.css">
-  <link rel="stylesheet" href="../src/styles/components.css">
-  <link rel="stylesheet" href="../src/styles/responsive.css">
+  <link rel="stylesheet" href="../../src/styles/base.css">
+  <link rel="stylesheet" href="../../src/styles/components.css">
+  <link rel="stylesheet" href="../../src/styles/responsive.css">
 </head>
 <body>
   <header class="site-header">
     <div class="page-shell header-inner">
-      <a href="../index.html" class="brand" aria-label="العودة للصفحة الرئيسية"><span class="brand-mark">M</span>MDL</a>
+      <a href="../../index.html" class="brand" aria-label="MDL — مكتبة بيانات وادي الرافدين، العودة للصفحة الرئيسية">MDL</a>
       <nav class="site-nav" aria-label="التنقل الرئيسي">
-        <a href="../index.html">الرئيسية</a>
-        <a href="about.html">من نحن</a>
-        <a href="resources.html">الموارد</a>
-        <a href="contact.html">تواصل معنا</a>
+        <a href="../../index.html">الرئيسية</a>
+        <a href="../about.html">من نحن</a>
+        <a href="../resources.html">الموارد</a>
+        <a href="../contact.html">تواصل معنا</a>
         <a href="profile.html" class="is-active">الملف الشخصي</a>
       </nav>
       <label class="site-search" aria-label="البحث">
         <span aria-hidden="true">⌕</span>
         <input type="search" placeholder="ابحث ...">
       </label>
-      <a href="auth/login.html" class="btn btn--primary">تسجيل الدخول</a>
+      <a href="../auth/login.html" class="btn btn--primary">تسجيل الدخول</a>
     </div>
   </header>
 
@@ -40,29 +40,35 @@
 
     <section class="section">
       <div class="page-shell profile-layout">
-        <aside class="side-panel profile-summary">
-          <h2>ملخص الملف</h2>
-          <div class="profile-summary__item">
-            <label>الاسم الكامل</label>
-            <strong id="profileNameValue">Layla Al-Hadid</strong>
+        <div class="profile-sidebar">
+          <aside class="side-panel profile-summary">
+            <h2>ملخص الملف</h2>
+            <div class="profile-summary__item">
+              <label>الاسم الكامل</label>
+              <strong id="profileNameValue">Layla Al-Hadid</strong>
+            </div>
+            <div class="profile-summary__item">
+              <label>الدور</label>
+              <strong id="profileRoleValue">محلل بيانات</strong>
+            </div>
+            <div class="profile-summary__item">
+              <label>البريد الإلكتروني</label>
+              <strong id="profileEmailValue">layla@datahaze.ai</strong>
+            </div>
+            <div class="profile-summary__item">
+              <label>المنظمة</label>
+              <strong id="profileOrgValue">MDL — مكتبة بيانات وادي الرافدين</strong>
+            </div>
+            <div class="profile-summary__item">
+              <label>نبذة</label>
+              <strong id="profileBioValue">أعمل على تحليل البيانات السريرية وتحويلها إلى رؤى عملية.</strong>
+            </div>
+          </aside>
+
+          <div class="profile-edit-trigger">
+            <button id="toggleProfileEdit" class="btn btn--secondary" type="button">تعديل الملف</button>
           </div>
-          <div class="profile-summary__item">
-            <label>الدور</label>
-            <strong id="profileRoleValue">محلل بيانات</strong>
-          </div>
-          <div class="profile-summary__item">
-            <label>البريد الإلكتروني</label>
-            <strong id="profileEmailValue">layla@datahaze.ai</strong>
-          </div>
-          <div class="profile-summary__item">
-            <label>المنظمة</label>
-            <strong id="profileOrgValue">MDL — مكتبة بيانات وادي الرافدين</strong>
-          </div>
-          <div class="profile-summary__item">
-            <label>نبذة</label>
-            <strong id="profileBioValue">أعمل على تحليل البيانات السريرية وتحويلها إلى رؤى عملية.</strong>
-          </div>
-        </aside>
+        </div>
 
         <article class="detail-panel" id="profileEditorPanel" hidden>
           <h2>تحديث الملف الشخصي</h2>
@@ -102,9 +108,6 @@
           </form>
         </article>
 
-        <div class="profile-edit-trigger">
-          <button id="toggleProfileEdit" class="btn btn--secondary" type="button">تعديل الملف</button>
-        </div>
       </div>
     </section>
 
